@@ -1,0 +1,10 @@
+.board td {
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    transition: 0.5s;
+    border: 1px solid black;
+    cursor: pointer;
+    position: relative;
+    background-color: rgba(175, 175, 175, 0.616);
+}
