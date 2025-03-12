@@ -1,3 +1,11 @@
+body {
+    text-align: center;
+}
+
+table {
+    margin: auto;
+}
+
 .board td {
     width: 30px;
     height: 30px;
@@ -7,4 +15,18 @@
     cursor: pointer;
     position: relative;
     background-color: rgba(175, 175, 175, 0.616);
+    margin: auto;
+}
+
+.revealed {
+    background-color: rgba(236, 227, 227, 0.616) !important;
+    color: black;
+    font-weight: bold;
+}
+
+.first-container {
+    background-color: rgba(175, 175, 175, 0.616);
+    margin: auto;
+    width: 140px;
+    border: 1px solid black;
 }
