@@ -1,9 +1,19 @@
-body {
+/* * {
+    box-sizing: border-box;
+} */
+
+/* body {
     text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+} */
+
+/* body button {
+    cursor: pointer;
 }
 
 table {
     margin: auto;
+    width: fit-content;
 }
 
 .board td {
@@ -16,17 +26,190 @@ table {
     position: relative;
     background-color: rgba(175, 175, 175, 0.616);
     margin: auto;
-}
+} */
 
-.revealed {
+/* h1 {
+    font-size: 50px;
+    text-shadow: 4px 4px 4px rgba(99, 99, 99, 0.616);
+} */
+
+/* .revealed {
     background-color: rgba(236, 227, 227, 0.616) !important;
-    color: black;
-    font-weight: bold;
 }
 
 .first-container {
+    margin-block: 10px;
+}
+
+.first-container span {
+    font-size: 25px;
+}
+
+.first-container button {
+    background-color: transparent;
+    border: transparent;
+    font-size: 20px;
+}
+
+
+.Dark-Mode {
+    position: absolute;
+    right: 20px;
+    width: 100px;
+    height: 20px;
+    border-radius: 10px;
+    background-color: black;
+    color: aliceblue;
+}
+
+.levels button {
+    background-color: transparent;
+    border: transparent;
+    font-size: 20px;
+}
+
+.levels button:hover {
+    font-size: 19px;
+}
+
+.second-container button,
+.third-container button {
+    background-color: transparent;
+    border: transparent;
+    margin-top: 20px;
+    font-size: 25px;
+}
+
+.second-container button:hover {
+    font-size: 24px;
+}
+.third-container button:hover {
+    font-size: 24px;
+}
+
+.smile {
+    cursor: pointer;
+} */
+
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    text-align: center;
+    font-family: 'Arial', 'Helvetica', sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+body button {
+    cursor: pointer;
+    outline: none;
+}
+
+h1 {
+    font-size: 50px;
+    text-shadow: 4px 4px 4px rgba(99, 99, 99, 0.616);
+    color: #333;
+    margin-bottom: 20px;
+}
+
+table {
+    margin: auto;
+    width: fit-content;
+}
+
+.board td {
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    border: 1px solid #ccc;
+    cursor: pointer;
+    position: relative;
     background-color: rgba(175, 175, 175, 0.616);
     margin: auto;
-    width: 140px;
-    border: 1px solid black;
+    border-radius: 5px;
+}
+
+.revealed {
+    background-color: rgba(236, 227, 227, 0.8) !important;
+}
+
+.first-container {
+    margin: 20px;
+}
+
+.first-container span {
+    font-size: 25px;
+    color: #333;
+}
+
+.levels button {
+    background-color: #28a746b9;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    font-size: 20px;
+    border-radius: 5px;
+}
+
+.levels button:hover {
+    background-color: #218837ae;
+}
+
+.second-container button,
+.third-container button {
+    background-color: #ffc10732;
+    color: black;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    margin-top: 20px;
+    font-size: 25px;
+}
+
+.hint.on {
+    background-color: yellow;
+}
+
+.second-container button:hover {
+    background-color: #e0a8006d;
+}
+
+.smile {
+    cursor: pointer;
+    background-color: transparent;
+    padding: 15px 30px;
+    border: none;
+    transition: 0.3s;
+}
+
+.smile:hover {
+    font-size: 27px;
+}
+
+.Dark-Mode {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    width: 100px;
+    height: 40px;
+    border-radius: 20px;
+    background-color: black;
+    color: aliceblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.Dark-Mode:hover {
+    background-color: #333;
+}
+
+title {
+    background-color: blue;
 }

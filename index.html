@@ -9,27 +9,43 @@
 </head>
 
 <body onload="onInit()">
+    <p>
+        <button class="Dark-Mode">Dark Mode</button>
+    </p>
 
     <h1>Mine Sweeper</h1>
 
     <div class="levels">
-        <button onclick="levelBtn(this)" class="Beginner">Beginner</button>
-        <button onclick="levelBtn(this)" class="Medium">Medium</button>
-        <button onclick="levelBtn(this)" class="Expert">Expert</button>
+        <button onclick="setDifficulty(this)" class="Beginner">Beginner</button>
+        <button onclick="setDifficulty(this)" class="Medium">Medium</button>
+        <button onclick="setDifficulty(this)" class="Expert">Expert</button>
     </div>
 
     <div class="first-container">
-        <button>🙂</button>
+        <span class="mines-counter"></span>
+        <span class="smile" onclick="onInit()">🙂</span>
+        <span class="timer">000</span>
+
     </div>
 
     <table>
         <tbody class="board"></tbody>
     </table>
 
+    <div class="second-container">
 
+        <button class="instraction">❓</button>
+        <button class="undo">↪️</button>
+        <button class="safe click">✅</button>
+    </div>
 
+    <div class="third-container">
+        <button class="life"><span>3</span>❤️</button>
+        <button class="hint" onclick="setHints(this)"><span>3</span>💡</button>
+    </div>
 
     <script src="js/main.js"></script>
+    <script src="js/utils.js"></script>
 </body>
 
 </html>
