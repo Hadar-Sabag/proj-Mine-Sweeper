@@ -39,6 +39,8 @@ function onInit() {
     // console.table(gBoard)
     renderBoard(gBoard)
     updateMinesCounter(0)
+    stopTimer()
+    document.querySelector('.timer').innerText = '000'
 
     const elspan = document.querySelector('.smile')
     elspan.innerText = NORMAL
