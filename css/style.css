@@ -18,7 +18,7 @@ body button {
 h1 {
     font-size: 50px;
     text-shadow: 4px 4px 4px rgba(99, 99, 99, 0.616);
-    color: #333;
+    color: #333333db;
     margin-bottom: 20px;
 }
 
@@ -43,15 +43,6 @@ table {
     background-color: rgba(236, 227, 227, 0.8) !important;
 }
 
-.first-container {
-    margin: 20px;
-}
-
-.first-container span {
-    font-size: 25px;
-    color: #333;
-}
-
 .levels button {
     background-color: #28a746b9;
     color: white;
@@ -65,8 +56,16 @@ table {
     background-color: #218837ae;
 }
 
-.second-container button,
-.third-container button {
+.first-container {
+    margin: 20px;
+}
+
+.first-container span {
+    font-size: 25px;
+    color: #333;
+}
+
+.second-container button {
     background-color: #ffc10732;
     color: black;
     padding: 10px 20px;
@@ -74,10 +73,6 @@ table {
     border-radius: 5px;
     margin-top: 20px;
     font-size: 25px;
-}
-
-.hint.on {
-    background-color: yellow;
 }
 
 .second-container button:hover {
@@ -96,26 +91,56 @@ table {
     font-size: 27px;
 }
 
-.Dark-Mode {
-    position: absolute;
-    top: 10px;
-    right: 20px;
-    width: 100px;
-    height: 40px;
-    border-radius: 20px;
-    background-color: black;
-    color: aliceblue;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    cursor: pointer;
-    transition: 0.3s;
+.best-score {
+    margin: auto;
+    margin-block: 50px;
+    background-color: #09afebb9;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    font-size: 20px;
+    border-radius: 5px;
+    width: 200px;
 }
 
-.Dark-Mode:hover {
+.toggle-mode-btn {
+    padding: 3px 6px;
+    border-radius: 5px;
+    color: white;
+    background-color: #121212;
+}
+
+.dark-mode {
+    background-color: #121212;
+    color: #ffffff;
+}
+
+.dark-mode h1 {
+    text-shadow: 4px 4px 4px rgba(251, 247, 247, 0.616);
+    color: #fffcfcdb;
+}
+
+.dark-mode .board {
+    border-color: #ffffff;
+}
+
+.dark-mode button {
     background-color: #333;
+    color: white;
+    border: 1px solid white;
 }
 
-title {
-    background-color: blue;
+.dark-mode button:hover {
+    background-color: #6a6868;
+}
+
+.dark-mode span {
+    color: white;
+}
+
+.dark-mode.toggle-mode-btn {
+    padding: 3px 6px;
+    border-radius: 5px;
+    color: #121212;
+    background-color: white;
 }

@@ -10,7 +10,7 @@
 
 <body onload="onInit()">
     <p>
-        <button class="Dark-Mode">Dark Mode</button>
+        <button class="toggle-mode-btn" onclick="toggleDarkMode()">Dark Mode</button>
     </p>
 
     <h1>Mine Sweeper</h1>
@@ -33,16 +33,12 @@
     </table>
 
     <div class="second-container">
-
-        <button class="instraction">❓</button>
-        <button class="undo">↪️</button>
-        <button class="safe click">✅</button>
-    </div>
-
-    <div class="third-container">
         <button class="life"><span>3</span>❤️</button>
-        <button class="hint" onclick="setHints(this)"><span>3</span>💡</button>
+        <button class="hint" onclick="onHintClick(this)"><span>3</span>💡</button>
     </div>
+
+
+    <div class="best-score">Best Score: <span>---</span></div>
 
     <script src="js/main.js"></script>
     <script src="js/utils.js"></script>
