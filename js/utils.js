@@ -1,6 +1,6 @@
 'use strict'
 
-//                         RANDOM
+// RANDOM
 
 // The maximum is exclusive and the minimum is inclusive
 function getRandomInt(min, max) {
@@ -25,7 +25,7 @@ function getRandomColor() {
     return color
 }
 
-/////                      MATRIX
+///// MATRIX
 
 function createMat() {
     var mat = []

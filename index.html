@@ -9,9 +9,8 @@
 </head>
 
 <body onload="onInit()">
-    <p>
-        <button class="toggle-mode-btn" onclick="toggleDarkMode()">Dark Mode</button>
-    </p>
+
+    <button class="toggle-mode-btn" onclick="toggleDarkMode()">Dark Mode</button>
 
     <h1>Mine Sweeper</h1>
 
@@ -33,8 +32,12 @@
     </table>
 
     <div class="second-container">
-        <button class="life"><span>3</span>❤️</button>
-        <button class="hint" onclick="onHintClick(this)"><span>3</span>💡</button>
+
+        <button title="Lives" class="life"><span>3</span>❤️</button>
+
+        <button title="Hints" class="hint" onclick="onHintClick()"><span>3</span>💡</button>
+
+        <button title="Safe Clicks" class="safe" onclick="onSafeClick()"><span>3</span>✅</button>
     </div>
 
 

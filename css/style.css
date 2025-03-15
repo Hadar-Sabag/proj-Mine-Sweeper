@@ -43,6 +43,10 @@ table {
     background-color: rgba(236, 227, 227, 0.8) !important;
 }
 
+.revealed-safe {
+    background-color: rgb(148, 246, 148) !important;
+}
+
 .levels button {
     background-color: #28a746b9;
     color: white;
@@ -108,6 +112,10 @@ table {
     border-radius: 5px;
     color: white;
     background-color: #121212;
+}
+
+.toggle-mode-btn:hover {
+    background-color: #121212b5;
 }
 
 .dark-mode {
